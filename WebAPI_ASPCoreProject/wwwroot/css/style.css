@@ -1,0 +1,423 @@
+﻿
+
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 1380px;
+    width: 100%;
+    background-image: url('../img/angular-bg.jpg');
+    padding: 0;
+    margin: 0;
+}
+
+span{
+    font-size:16px;
+    font-weight:600;
+
+}
+p{
+    text-align:center;
+}
+
+#mobile_input{
+    display:none;
+    margin-bottom:30px;
+}
+
+.toggle_body{
+    width:75%;
+    height:100px;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.toggle_line {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    border: 0px solid #00144f;
+    background: #00144f;
+    height: 1px;
+}
+
+.toggle_ball {
+    position: absolute;
+    cursor: pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 3px solid #00144f;
+    background-color:white;
+    margin-top: -8px;
+}
+
+
+.grid_countries{
+
+    margin-top:50px;
+
+    height:170px;
+    width:250px;
+   
+    display:grid;
+    grid-template-columns:33.33% 33.33% 33.33%;
+    grid-template-rows:50% 50%;
+}
+.img_grid_ball{
+    width:75px;
+    height:75px;
+}
+
+a{
+    text-decoration:none;
+}
+
+h2{
+    font-size:25px;
+}
+
+.block_1 {
+    color: white;
+    width: 100%;
+    height: 35.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons_block{
+    margin-top:20px;
+    gap:20px;
+    height:auto;
+    width:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.img_ball {
+    height: 55px;
+    width: 55px;
+}
+
+.block_1_icon_row {
+    gap:40px;
+    width: 100%;
+    height:50px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.block_2{
+    width:100%;
+    height:66.66%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.form_body{
+    padding-top:20px;
+    height:80%;
+    width:50%;
+    border-radius:50px;
+
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    
+    align-items:center;
+}
+
+.form_part{
+    width:50%;
+    word-break:break-word;
+}
+
+.input_fail{
+    border:1px solid red !important;
+}
+#top_input_enter{
+    transition:.5s;
+}
+
+.input_block{
+    display:flex;
+    flex-direction:column;
+
+}
+
+#top_input{
+    margin-top:30px;
+}
+.input_span{
+    margin: 0 0 5px 0;
+    text-align:left;
+    font-size:16px;
+
+}
+.form_input {
+    font-size:16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+
+    text-decoration:none;
+    outline:none;
+    padding:5px 5px 5px 30px;
+
+    width: 350px;
+    height: 40px;
+    border: 1px solid #cfd6eb;
+    border-radius:10px;
+}
+
+.form_input p{
+    text-align:left;
+}
+
+.form_input::placeholder{
+    font-size:16px;
+    color:darkgray;
+}
+
+
+.title {
+    font-size:44px;
+    text-align:center;
+}
+
+.subtitle{
+    font-size:24px;
+}
+
+
+.start_button {
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:35px;
+
+    height: 50px;
+    width: 330px;
+
+    color: black;
+    font-weight:bold;
+    background: #ffd10b;
+
+    text-transform:uppercase;
+
+    border-radius:10px;
+
+    transition:0.5s;
+}
+
+    .start_button:hover {
+        border: 1px solid #ffd10b;
+        background-color: transparent;
+        color: #ffd10b;
+    }
+
+.reveal_button {
+    user-select:none;
+    cursor:pointer;
+    margin-top:20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform:uppercase;
+
+    border-radius: 10px;
+    width: 140px;
+    height: 42px;
+    background: #00144f;
+    color: white;
+
+    transition:0.5s;
+}
+
+    .reveal_button:not(.disabled):hover {
+        background: transparent;
+        border: 1px solid #00144f;
+        color: #00144f;
+    }
+    
+
+    .disabled{
+        background:gray;
+        cursor:not-allowed;
+    }
+
+
+/* Dropdown Button */
+.dropbtn {
+    z-index:2;
+    cursor: pointer;
+    transition:0.25s;
+}
+
+.dropdown_placeholder {
+    color: darkgray;
+    z-index:1;
+    user-select:none;
+    width:100%;
+    height:100%;
+}
+
+    /* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    box-shadow: 1px 1px 1px 1px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+.more_img_disabled{
+    display:none;
+}
+
+
+
+
+
+@media (pointer:none), (pointer:coarse) {
+    .toggle_body {
+        display: none;
+    }
+
+    #change_budget {
+        display: none;
+    }
+
+    #mobile_input {
+        display: block;
+    }
+}
+
+
+@media (max-width:1330px) {
+    .form_body:not(.JS) {
+        width: 40%;
+        padding-left: 10%;
+        align-items: normal;
+    }
+}
+
+@media(max-width:1000px) {
+    .form_body:not(.JS) {
+        width: 100%;
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .JSadded {
+        width: 75%;
+        text-align: center;
+    }
+
+    .form_body {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width:570px) {
+    .title {
+        width: 85%;
+        font-size: 30px;
+    }
+
+    .form_part {
+        width: auto;
+    }
+
+    .form_body:not(.JS) {
+        height: 65%;
+        padding-left: 0%;
+    }
+
+    .form_body h2 {
+        text-align: center;
+    }
+
+    .block_1 {
+        height: 39.33%;
+    }
+
+    .img_ball:last-child {
+        display: none;
+    }
+
+    .block_1 p:not(.title) {
+        width: 75%;
+    }
+}
+
+@media (max-width:400px) {
+    .img_ball:first-child {
+        display: none;
+    }
+
+    .start_button {
+        width: 200px;
+        text-align: center;
+    }
+
+    .form_input {
+        width: 275px;
+    }
+}
+

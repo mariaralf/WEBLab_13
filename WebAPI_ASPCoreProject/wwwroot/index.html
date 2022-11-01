@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web API</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="block_1">
+        <p class="title">Enjoy massive exposure in numeorus countries</p>
+        <p>Your competitors might be using MegatronQ and getting outstanding results from:</p>
+        <div class="icons_block">
+            <div class="block_1_icon_row">
+                <img class="img_ball" src="img/icon_brazil.png" />
+                <img class="img_ball" src="img/icon_canada.png" />
+                <img class="img_ball" src="img/icon_china.png" />
+                <img class="img_ball" src="img/icon_france.png" />
+                <img class="img_ball" src="img/icon_germany.png" />
+            </div>
+
+            <div class="block_1_icon_row">
+                <img class="img_ball" src="img/icon_italy.png" />
+                <img class="img_ball" src="img/icon_japan.png" />
+                <img class="img_ball" src="img/icon_spain.png" />
+                <img class="img_ball" src="img/icon_uk.png" />
+                <img class="img_ball" src="img/icon_usa.png" />
+            </div>
+        </div>
+
+        <a href="#" class="start_button">
+            start your first campaign
+        </a>
+
+    </div>
+
+    <div class="block_2">
+        <div class="form_body" id="form_body">
+
+            <h2 class="form_part">
+                ANSWER THE QUESTIONS TO
+                FIND HOW TO STAY AHEAD OF YOUR COMPETITORS
+            </h2>
+
+
+            <div class="form_part input_block" id="top_input">
+                <p class="input_span">
+                    Your landing page or website URL
+                </p>
+                <input type="text" autocomplete="off" class="form_input" onchange="onTopInputChange()" id="top_input_enter" placeholder="Copy your landing page website URL here" />
+            </div>
+            <div class="form_part" style="margin-top:25px;">
+                <p class="input_span" id="dropdown_input">
+                    Your company`s industry
+                </p>
+
+                <div class="dropdown">
+                    <div class="form_input dropbtn">
+                        <p class="dropdown_placeholder" onclick="ToggleDropdownFunction(0)" id="dropdown_placeholder_1">Select your vertical</p>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a>Telecommunications</a>
+                        <a>Automotive</a>
+                        <a>Food</a>
+                        <a>IT</a>
+                        <a>E-commerce</a>
+                        <a>Transport</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form_part" style="margin-top:20px;">
+                <p class="input_span" id="dropdown_input">
+                    Where is your target audience?
+                </p>
+
+                <div class="dropdown">
+                    <div class="form_input dropbtn">
+                        <p class="dropdown_placeholder" onclick="ToggleDropdownFunction(1)" id="dropdown_placeholder_2">Select region</p>
+                    </div>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a>Germany</a>
+                        <a>Italy</a>
+                        <a>UK</a>
+                        <a>USA</a>
+                        <a>Canada</a>
+                        <a>France</a>
+                        <a>China</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="form_part">
+
+                <div class="reveal_button disabled" id="submit_button" onclick="">reveal</div>
+
+            </div>
+            
+        </div>
+    </div>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
